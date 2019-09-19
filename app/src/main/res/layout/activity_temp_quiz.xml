@@ -26,26 +26,36 @@
         android:layout_height="wrap_content"
         >
         <RadioButton
+            android:id="@+id/radio_s_agree"
+            android:onClick="checkRadioButtonClicked"
             android:text="@string/radio_strong_agree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
+            android:id="@+id/radio_p_agree"
+            android:onClick="checkRadioButtonClicked"
             android:text="@string/radio_partially_agree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
+            android:id="@+id/radio_neutral"
+            android:onClick="checkRadioButtonClicked"
             android:text="@string/radio_neutral"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
+            android:id="@+id/radio_p_disagree"
+            android:onClick="checkRadioButtonClicked"
             android:text="@string/radio_partially_disagree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
+            android:id="@+id/radio_s_disagree"
+            android:onClick="checkRadioButtonClicked"
             android:text="@string/radio_strong_disagree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -59,7 +69,6 @@
     <Button
         android:layout_margin="16dp"
         android:layout_gravity="center"
-        android:onClick="checkRadioButtons"
         style="@style/ButtonTheme"
         android:text="@string/next_button"/>
 

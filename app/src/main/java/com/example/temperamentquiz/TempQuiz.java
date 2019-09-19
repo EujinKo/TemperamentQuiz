@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,6 +36,9 @@ public class TempQuiz extends AppCompatActivity {
     private static int percent_phlegmatic;
     private static int percent_sanguine;
 
+    //
+    private static int radioWeight;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +47,27 @@ public class TempQuiz extends AppCompatActivity {
         saveFourTempQuizToArray();
     }
 
-    public void checkRadioButtons(View view){
+    public void checkRadioButtonClicked(View view){
+        boolean checked = ((RadioButton) view).isChecked();
+
+        if(checked){
+            if(view.getId() ==  R.id.radio_s_agree){
+                radioWeight = 4;
+            }else if(view.getId() == R.id.radio_p_agree){
+                radioWeight = 3;
+            }else if(view.getId() == R.id.radio_neutral){
+                radioWeight = 2;
+            }else if(view.getId() == R.id.radio_p_disagree){
+                radioWeight = 1;
+            }else if(view.getId() == R.id.radio_s_disagree){
+                radioWeight = 0;
+            }
+            System.out.println(radioWeight);
+
+
+        }
 
     }
-
-
 
     //Save four random quiz to the matching temperament list
     private void saveFourTempQuizToArray(){
