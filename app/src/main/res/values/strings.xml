@@ -1,5 +1,14 @@
 <resources>
+    <string name="label_title">Temperament</string>
+    <string name="label_quiz">Temperament Quiz</string>
+    <string name="label_result">Quiz Result</string>
     <string name="app_name">TemperamentQuiz</string>
     <string name="welcome_message">Welcome to the four temperaments quiz!</string>
     <string name="begin_button">Begin Quiz</string>
+    <string name="next_button">NEXT QUESTION</string>
+    <string name="radio_strong_agree">Strongly Agree</string>
+    <string name="radio_partially_agree">Partially Agree</string>
+    <string name="radio_neutral">Neutral</string>
+    <string name="radio_partially_disagree">Partially Disagree</string>
+    <string name="radio_strong_disagree">Strongly Disagree</string>
 </resources>

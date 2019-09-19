@@ -17,13 +17,10 @@
         android:layout_margin="16dp"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:onClick="StartQuiz"
         android:layout_margin="16dp"
         android:layout_gravity="center"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorButton"
-        android:text="@string/begin_button"
-        android:textSize="40dp" />
+        style="@style/ButtonTheme"
+        android:text="@string/begin_button" />
 
 </LinearLayout>
