@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TemperamentQuiz</string>
+    <string name="welcome_message">Welcome to the four temperaments quiz!</string>
+    <string name="begin_button">Begin Quiz</string>
 </resources>
