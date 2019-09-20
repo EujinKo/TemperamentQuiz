@@ -88,7 +88,9 @@ public class TempSummary extends AppCompatActivity {
         Collections.sort(integerList);
 
         int largestNumber=integerList.get(integerList.size()-1);
-        if(largestNumber==percent_choleric){
+        if(largestNumber==0){
+            return "";
+        } else if(largestNumber==percent_choleric){
             return "choleric";
         } else if(largestNumber==percent_melancholic){
             return "melancholic";
