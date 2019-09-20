@@ -25,12 +25,10 @@ public class TempSummary extends AppCompatActivity {
 
         retrieveBundle();
         String userTemp = largestTemperament();
-        if(userTemp!=null){
-            setUserTempText(userTemp);
-            setUserTempDescription(userTemp);
-            String scores = getScoresString();
-            setScore(scores);
-        }
+        setUserTempText(userTemp);
+        setUserTempDescription(userTemp);
+        String scores = getScoresString();
+        setScore(scores);
     }
     private void setScore(String scores){
         TextView textView = findViewById(R.id.temp_score);
@@ -58,6 +56,8 @@ public class TempSummary extends AppCompatActivity {
             description = getResources().getString(R.string.temp_phlegmatic);
         }else if(userTemp.equals("sanguine")){
             description = getResources().getString(R.string.temp_sanguine);
+        }else{
+            description = "";
         }
         TextView textView = findViewById(R.id.temp_description);
         textView.setText(description);
@@ -82,7 +82,9 @@ public class TempSummary extends AppCompatActivity {
     private String largestTemperament(){
         String temp;
 
-        List<Integer> integerList = new ArrayList<Integer>(Arrays.asList(percent_choleric,percent_melancholic,percent_phlegmatic,percent_sanguine));
+        List<Integer> integerList = new ArrayList<Integer>(
+                Arrays.asList(percent_choleric,percent_melancholic,
+                        percent_phlegmatic,percent_sanguine));
         Collections.sort(integerList);
 
         int largestNumber=integerList.get(integerList.size()-1);
@@ -95,6 +97,6 @@ public class TempSummary extends AppCompatActivity {
         } else if(largestNumber==percent_sanguine){
             return "sanguine";
         }
-        return null;
+        return "";
     }
 }

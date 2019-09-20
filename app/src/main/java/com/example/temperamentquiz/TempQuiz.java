@@ -86,10 +86,6 @@ public class TempQuiz extends AppCompatActivity {
             radioWeight = -1;
             switchQuestion();
         }
-//        System.out.println("percent_choleric: "+percent_choleric);
-//        System.out.println("percent_melancholic: "+percent_melancholic);
-//        System.out.println("percent_phlegmatic: "+percent_phlegmatic);
-//        System.out.println("percent_sanguine: "+percent_sanguine);
     }
 
     //This function switches the question of the TextVIew
