@@ -53,23 +53,17 @@ public class TempQuiz extends AppCompatActivity {
         switchQuestion();
     }
 
-    //Go to summary screen when called & save the percent values into SharedPreferences
+    //Go to summary screen when called & save the percent values into bundle
     public void goToSummary(View view){
-        SharedPreferences sharedPrefs = this.getSharedPreferences("temp_percent",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPrefs.edit();
-        editor.clear();
-        editor.putInt("choleric",percent_choleric);
-        editor.putInt("melancholic",percent_melancholic);
-        editor.putInt("phlegmatic",percent_phlegmatic);
-        editor.putInt("sanguine",percent_sanguine);
-        editor.commit();
-//
-//        System.out.println("percent_choleric: "+percent_choleric);
-//        System.out.println("percent_melancholic: "+percent_melancholic);
-//        System.out.println("percent_phlegmatic: "+percent_phlegmatic);
-//        System.out.println("percent_sanguine: "+percent_sanguine);
-
         Intent intent = new Intent(this,TempSummary.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putInt("choleric",percent_choleric);
+        bundle.putInt("melancholic",percent_melancholic);
+        bundle.putInt("phlegmatic",percent_phlegmatic);
+        bundle.putInt("sanguine",percent_sanguine);
+        intent.putExtras(bundle);
+
         startActivity(intent);
     }
 

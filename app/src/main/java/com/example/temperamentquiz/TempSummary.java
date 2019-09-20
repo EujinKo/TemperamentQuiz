@@ -23,7 +23,7 @@ public class TempSummary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp_summary);
 
-        retrieveSharedPreferences();
+        retrieveBundle();
         String userTemp = largestTemperament();
         if(userTemp!=null){
             setUserTempText(userTemp);
@@ -69,18 +69,13 @@ public class TempSummary extends AppCompatActivity {
         textView.setText(userTemp);
     }
 
-    // This function retrieves percents of each temperament, loading from SharedPrefereneces
-    private void retrieveSharedPreferences(){
-        SharedPreferences sharedPref = this.getSharedPreferences("temp_percent",Context.MODE_PRIVATE);
-        percent_choleric = sharedPref.getInt("choleric",0);
-        percent_melancholic = sharedPref.getInt("melancholic",0);
-        percent_phlegmatic = sharedPref.getInt("phlegmatic",0);
-        percent_sanguine = sharedPref.getInt("sanguine",0);
-
-        System.out.println("percent_choleric: "+percent_choleric);
-        System.out.println("percent_melancholic: "+percent_melancholic);
-        System.out.println("percent_phlegmatic: "+percent_phlegmatic);
-        System.out.println("percent_sanguine: "+percent_sanguine);
+    // This function retrieves percents of each temperament, loading from bundle
+    private void retrieveBundle(){
+        Bundle bundle = this.getIntent().getExtras();
+        percent_choleric = bundle.getInt("choleric",0);
+        percent_melancholic = bundle.getInt("melancholic",0);
+        percent_phlegmatic = bundle.getInt("phlegmatic",0);
+        percent_sanguine = bundle.getInt("sanguine",0);
     }
 
     // Returns the largest temperament feature
