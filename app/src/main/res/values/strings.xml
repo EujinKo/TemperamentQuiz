@@ -11,4 +11,12 @@
     <string name="radio_neutral">Neutral</string>
     <string name="radio_partially_disagree">Partially Disagree</string>
     <string name="radio_strong_disagree">Strongly Disagree</string>
+    <string name="quiz_summary_title">Quiz Summary</string>
+    <string name="your_temp">Your Temperament:</string>
+    <string name="temp_desc_title">Temperament Description:</string>
+    <string name="temp_score_title">Temperament Scores:</string>
+    <string name="temp_sanguine">Sanguine personality type is described primarily as being highly talkative, enthusiastic, active, and social. Sanguines tend to be more extroverted and enjoy being part of a crowd; they find that being social, outgoing, and charismatic is easy to accomplish. Individuals with this personality have a hard time doing nothing and engage in more risk seeking behaviour.</string>
+    <string name="temp_choleric">Choleric individuals tend to be more extroverted. They are described as independent, decisive, and goal-oriented, and ambitious. These combined with their dominant, result-oriented outlook make them natural leaders. In Greek, Medieval and Renaissance thought, they were also violent, vengeful, and short-tempered</string>
+    <string name="temp_melancholic">Melancholic individuals tend to be analytical and detail-oriented, and they are deep thinkers and feelers. They are introverted and try to avoid being singled out in a crowd. A melancholic personality leads to self-reliant individuals who are thoughtful, reserved, and often anxious. They often strive for perfection within themselves and their surroundings, which leads to tidy and detail oriented behavior.</string>
+    <string name="temp_phlegmatic">Phlegmatic individuals tend to be relaxed, peaceful, quiet, and easy-going. They are sympathetic and care about others, yet they try to hide their emotions. Phlegmatic individuals also are good at generalizing ideas or problems to the world and making compromises.</string>
 </resources>

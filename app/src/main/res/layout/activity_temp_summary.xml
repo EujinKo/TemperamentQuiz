@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TempSummary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="@string/quiz_summary_title"
+            style="@style/SummaryPageTheme"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkEmerald"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="@string/your_temp"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/your_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorGray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="@string/temp_desc_title"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/temp_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorGray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="@string/temp_score_title"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/temp_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            style="@style/SummaryPageTheme"
+            android:textColor="@color/colorGray"
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
