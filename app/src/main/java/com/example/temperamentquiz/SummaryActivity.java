@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class TempSummary extends AppCompatActivity {
+public class SummaryActivity extends AppCompatActivity {
     private int percent_choleric;
     private int percent_melancholic;
     private int percent_phlegmatic;

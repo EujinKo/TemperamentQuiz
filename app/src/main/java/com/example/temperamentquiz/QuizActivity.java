@@ -2,9 +2,7 @@ package com.example.temperamentquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -12,14 +10,13 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class TempQuiz extends AppCompatActivity {
+public class QuizActivity extends AppCompatActivity {
 
     //id of each question
     private int ID_CHOLERIC = R.raw.choleric;
@@ -55,7 +52,7 @@ public class TempQuiz extends AppCompatActivity {
 
     //Go to summary screen when called & save the percent values into bundle
     public void goToSummary(View view){
-        Intent intent = new Intent(this,TempSummary.class);
+        Intent intent = new Intent(this, SummaryActivity.class);
 
         Bundle bundle = new Bundle();
         bundle.putInt("choleric",percent_choleric);
